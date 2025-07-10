@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FastAPI Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form method="post">
+        <input type="number" name="a" step="any" placeholder="Enter number A" required>
+        <input type="number" name="b" step="any" placeholder="Enter number B" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if result %}
+    <h2>Results:</h2>
+    <ul>
+        <li>Addition: {{ result.add }}</li>
+        <li>Subtraction: {{ result.sub }}</li>
+        <li>Multiplication: {{ result.mul }}</li>
+        <li>Division: {{ result.div }}</li>
+    </ul>
+    {% endif %}
+</body>
+</html>
+ 
