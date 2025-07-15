@@ -14,7 +14,7 @@ def calculate(request: Request, a: float = Form(...), b: float = Form(...)):
     result = {
         "added utharam": a + b,
         "subraction utharam": a - b,
-        "mul": a * b,
+        "mul ok in gunanam": a * b,
         "div": "Infinity" if b == 0 else a / b
     }
     return templates.TemplateResponse("form.html", {"request": request, "result": result, "a": a, "b": b})
