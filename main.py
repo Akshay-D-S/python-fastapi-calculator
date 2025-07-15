@@ -13,7 +13,7 @@ def form_get(request: Request):
 def calculate(request: Request, a: float = Form(...), b: float = Form(...)):
     result = {
         "added utharam": a + b,
-        "sub": a - b,
+        "subraction utharam": a - b,
         "mul": a * b,
         "div": "Infinity" if b == 0 else a / b
     }
